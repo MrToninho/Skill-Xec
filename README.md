@@ -90,8 +90,8 @@ Skill-Xec/
 │   ├── Web.config               # Configuração da aplicação (inclui connection string)
 │   └── (outros ficheiros ASPX + assets)
 │
-├── bin/                         # Ficheiros compilados (gerados automaticamente)
-├── obj/                         # Objetos temporários do build
+├── bin/                         # Ficheiros compilados
+├── obj/                         # Objetos temporários da build
 └── README.md                    # Documentação do projeto
    ```
 
