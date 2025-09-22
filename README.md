@@ -31,7 +31,7 @@ gameplays, reviews, and tutorials.
 - Visual Studio (with ASP.NET and C# support)  
 - SQL Server (or SQL Server Express)  
 - Modern browser  
-- .NET Framework (version used in the project)  
+- .NET Framework
 
 ---
 
