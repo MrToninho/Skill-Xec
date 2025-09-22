@@ -1,0 +1,241 @@
+﻿@font-face {
+    font-family: 'Modulus Pro';
+    src: url('../fonts/modulus-pro-semi-bold.otf') format('opentype'); 
+    font-weight: 600; 
+    font-style: normal;
+}
+
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Estrutura Principal */
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/* Barra Lateral */
+.sidebar {
+    width: 250px;
+    background: linear-gradient(to bottom, #ff416c, #833ab4); 
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+}
+
+    .sidebar h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-family: 'Modulus Pro', sans-serif; 
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+            .sidebar ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                display: flex; 
+                align-items: center; 
+                gap: 10px; 
+                padding: 5px 0; 
+            }
+
+                .sidebar ul li a span {
+                    flex: 1; 
+                    text-align: left; 
+                    line-height: 1.5; 
+                }
+
+                .sidebar ul li a i {
+                    margin-right: 10px;
+                    font-size: 18px;
+                }
+
+.subscription-title {
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7); 
+    font-family: Arial, sans-serif;
+}
+
+/* Conteúdo Principal */
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Cabeçalho Geral */
+.header {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+/* Container Interno */
+.header-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+/* Logotipo e Título */
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.logo-title {
+    font-family: 'Modulus Pro', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Barra de Pesquisa */
+.search-bar-container {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+}
+
+.search-bar {
+    width: 70%; 
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/* Elementos do lado direito */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.upload-btn {
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 55px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.notification-icon {
+    font-size: 18px;
+    color: #555;
+    cursor: pointer;
+}
+
+.user-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: block;
+}
+
+.main-content {
+    margin-top: 80px; 
+}
+
+/* Grelha de Vídeos */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.video-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+    .video-card img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    .video-card h4 {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .video-card p {
+        font-size: 14px;
+        color: #555;
+    }
+
+/* Rodapé (se necessário) */
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    color: #999;
+    margin-top: 20px;
+}
+
+/* Ajuste Responsivo */
+@media (max-width: 768px) {
+    .search-bar {
+        width: 70%;
+    }
+
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
