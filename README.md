@@ -1,6 +1,6 @@
 # 🎮 Skill Xec – Plataforma de Conteúdo Gaming
 
-O **Skill Xec** é uma plataforma web onde utilizadores podem partilhar conteúdos relacionados com videojogos:  
+O **Skill Xec** é uma plataforma web onde os utilizadores podem partilhar conteúdos relacionados com videojogos:  
 gameplays, reviews e tutoriais.  
 
 ---
