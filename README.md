@@ -80,11 +80,11 @@ Skill-Xec/
 │   ├── index.aspx               # Home page
 │   ├── login.aspx               # Authentication page
 │   ├── register.aspx            # User registration
-│   ├── profile.aspx              # User profile
-│   ├── channel.aspx               # User's personal channel
+│   ├── profile.aspx             # User profile
+│   ├── channel.aspx             # User's personal channel
 │   ├── favorites.aspx           # List of favorite videos
-│   ├── history.aspx           # Viewing history
-│   ├── edit-video.aspx        # Video editing
+│   ├── history.aspx             # Viewing history
+│   ├── edit-video.aspx          # Video editing
 │   ├── admin.aspx               # Administration panel
 │   ├── Web.config               # Application configuration (includes connection string)
 │   └── (other ASPX files + assets)
