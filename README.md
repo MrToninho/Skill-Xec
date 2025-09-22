@@ -54,7 +54,7 @@ gameplays, reviews, and tutorials.
 4. Run the application:
 
 - Run with IIS Express or another configured server
-- Access at http://localhost:xxxx
+- Access at http://localhost:63223
   
 ---
 
