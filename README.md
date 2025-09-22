@@ -99,7 +99,7 @@ Skill-Xec/
 ## 🔧 Troubleshooting
 - Database connection error: check Web.config and whether SQL Server is active
 - Authentication issues: confirm that the Skillxec.sql script has been run correctly
-- Login and registration issues via Google: in login.aspx.cs and register.aspx.cs, you will need to change to your Google Client ID and Password for it to work
+- Login and registration issues via Google: in login.aspx.cs (lines 14 and 15) and register.aspx.cs (lines 15 and 16) , you will need to change to your Google Client ID and Password for it to work
 
 ---
 
