@@ -96,9 +96,9 @@ Skill-Xec/
 ---
 
 ## 🔧 Troubleshooting
-⚠️ Erro na conexão à BD: verificar Web.config e se o SQL Server está ativo
-⚠️ Problemas de autenticação: confirmar que o script Skillxec.sql foi corrido corretamente
-⚠️ Problemas de login e registo via Google: no login.aspx.cs e no register.aspx.cs, terá que mudar para o seu Google Client ID e Password para que funcione
+- Erro na conexão à BD: verificar Web.config e se o SQL Server está ativo
+- Problemas de autenticação: confirmar que o script Skillxec.sql foi corrido corretamente
+- Problemas de login e registo via Google: no login.aspx.cs e no register.aspx.cs, terá que mudar para o seu Google Client ID e Password para que funcione
 
 ---
 
