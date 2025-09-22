@@ -70,6 +70,7 @@ gameplays, reviews e tutoriais.
 ---
 
 ##📂 Estrutura do Projeto
+```bash
 
 Skill-Xec/
 │
@@ -92,6 +93,7 @@ Skill-Xec/
 ├── bin/                         # Ficheiros compilados (gerados automaticamente)
 ├── obj/                         # Objetos temporários do build
 └── README.md                    # Documentação do projeto
+   ```
 
 ---
 
