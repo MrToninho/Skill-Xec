@@ -71,20 +71,27 @@ gameplays, reviews e tutoriais.
 
 ##📂 Estrutura do Projeto
 
-ProjetoFinalPAP/
- ├── ProjetoFinalPAP.sln        # Ficheiro da solução
- ├── Skillxec.sql               # Script da base de dados
- ├── ProjetoFinalPAP/           # Código principal
- │   ├── index.aspx             # Página inicial
- │   ├── login.aspx             # Autenticação
- │   ├── register.aspx          # Registo
- │   ├── perfil.aspx            # Perfil do utilizador
- │   ├── canal.aspx             # Canal do utilizador
- │   ├── favoritos.aspx         # Favoritos
- │   ├── historico.aspx         # Histórico
- │   ├── editar-video.aspx      # Edição de vídeos
- │   ├── admin.aspx             # Administração
- │   └── Web.config             # Configurações
+Skill-Xec/
+│
+├── ProjetoFinalPAP.sln          # Ficheiro da solução Visual Studio
+├── Skillxec.sql                 # Script para criar e configurar a base de dados
+│
+├── ProjetoFinalPAP/             # Código principal da aplicação
+│   ├── index.aspx               # Página inicial
+│   ├── login.aspx               # Página de autenticação
+│   ├── register.aspx            # Registo de utilizadores
+│   ├── perfil.aspx              # Perfil do utilizador
+│   ├── canal.aspx               # Canal pessoal do utilizador
+│   ├── favoritos.aspx           # Lista de vídeos favoritos
+│   ├── historico.aspx           # Histórico de visualizações
+│   ├── editar-video.aspx        # Edição de vídeos
+│   ├── admin.aspx               # Painel de administração
+│   ├── Web.config               # Configuração da aplicação (inclui connection string)
+│   └── (outros ficheiros ASPX + assets)
+│
+├── bin/                         # Ficheiros compilados (gerados automaticamente)
+├── obj/                         # Objetos temporários do build
+└── README.md                    # Documentação do projeto
 
 ---
 
