@@ -1,114 +1,113 @@
-# 🎮 Skill Xec – Plataforma de Conteúdo Gaming
+# 🎮 Skill Xec – Gaming Content Platform
 
-O **Skill Xec** é uma plataforma web onde os utilizadores podem partilhar conteúdos relacionados com videojogos:  
-gameplays, reviews e tutoriais.  
+**Skill Xec** is a web platform where users can share video game-related content:  
+gameplays, reviews, and tutorials.  
 
 ---
 
 ## 📑 Table of Contents
-- ✨ [Funcionalidades](#-funcionalidades)  
-- ⚠️ [Requisitos](#️-requisitos)  
-- 🛠️ [Instalação](#-instalação)  
-- 🚀 [Uso](#-uso)  
-- 📂 [Estrutura do Projeto](#-estrutura-do-projeto)  
+- ✨ [Features](#-features)  
+- ⚠️ [Requirements](#️-requirements)  
+- 🛠️ [Installation](#-installation)  
+- 🚀 [Usage](#-usage)  
+- 📂 [Project Structure](#-project-structure)  
 - 🔧 [Troubleshooting](#-troubleshooting)  
-- 🙏 [Agradecimentos](#-agradecimentos)  
-- 📜 [Licença](#-licença)  
+- 🙏 [Acknowledgments](#-acknowledgments)  
 
 ---
 
-## ✨ Funcionalidades
-- 👤 Registo, login, ativação e recuperação de conta  
-- 📝 Perfis de utilizador personalizáveis  
-- 📤 Upload, edição e remoção de vídeos  
-- 📺 Criação de canais pessoais  
-- ❤️ Adicionar vídeos aos favoritos  
-- 📜 Histórico de visualizações  
-- 🛠️ Painel de administração para gestão de utilizadores e conteúdos  
+## ✨ Features
+- 👤 Registration, login, activation, and account recovery  
+- 📝 Customizable user profiles  
+- 📤 Video upload, editing, and removal  
+- 📺 Personal channel creation  
+- ❤️ Add videos to favorites  
+- 📜 Viewing history  
+- 🛠️ Admin panel for user and content management  
 
 ---
 
-## ⚠️ Requisitos
-- Visual Studio (com suporte a ASP.NET e C#)  
-- SQL Server (ou SQL Server Express)  
-- Navegador moderno  
-- .NET Framework (versão usada no projeto)  
+## ⚠️ Requirements
+- Visual Studio (with ASP.NET and C# support)  
+- SQL Server (or SQL Server Express)  
+- Modern browser  
+- .NET Framework (version used in the project)  
 
 ---
 
-## 🛠️ Instalação
-1. Clonar o repositório:  
-   ```bash
-   git clone https://github.com/teu-username/skill-xec.git
-   cd skill-xec
+## 🛠️ Installation
+1. Clone the repository:
+```bash
+  git clone https://github.com/teu-username/skill-xec.git
+  cd skill-xec
+```
+2. Configure the database:
 
-2. Configurar a base de dados:
+- Run the Skillxec.sql file in SQL Server
+- Update the connection string in Web.config
 
-- Executar o ficheiro Skillxec.sql no SQL Server
-- Atualizar a connection string em Web.config
+3. Open in Visual Studio:
 
-3. Abrir no Visual Studio:
+- Open ProjetoFinalPAP.sln
+- Set ProjetoFinalPAP as Startup Project
 
-- Abrir ProjetoFinalPAP.sln
-- Definir ProjetoFinalPAP como Startup Project
+4. Run the application:
 
-4. Executar a aplicação:
-
-- Correr com IIS Express ou outro servidor configurado
-- Aceder em http://localhost:xxxx
+- Run with IIS Express or another configured server
+- Access at http://localhost:xxxx
   
 ---
 
-## 🚀 Uso
+## 🚀 Usage
 
-- Criar uma conta ou fazer login
-- Publicar vídeos (gameplays, tutoriais ou reviews)
-- Explorar canais de outros utilizadores
-- Guardar vídeos em favoritos e consultar histórico
-- Administradores podem gerir conteúdos no painel de administração
+- Create an account or log in
+- Publish videos (gameplays, tutorials, or reviews)
+- Explore other users' channels
+- Save videos to favorites and view history
+- Administrators can manage content in the admin panel
 
 ---
 
-##📂 Estrutura do Projeto
+##📂 Project Structure
 ```bash
 
 Skill-Xec/
 │
-├── ProjetoFinalPAP.sln          # Ficheiro da solução Visual Studio
-├── Skillxec.sql                 # Script para criar e configurar a base de dados
+├── ProjetoFinalPAP.sln          # Visual Studio solution file
+├── Skillxec.sql                 # Script to create and configure the database
 │
-├── ProjetoFinalPAP/             # Código principal da aplicação
-│   ├── index.aspx               # Página inicial
-│   ├── login.aspx               # Página de autenticação
-│   ├── register.aspx            # Registo de utilizadores
-│   ├── perfil.aspx              # Perfil do utilizador
-│   ├── canal.aspx               # Canal pessoal do utilizador
-│   ├── favoritos.aspx           # Lista de vídeos favoritos
-│   ├── historico.aspx           # Histórico de visualizações
-│   ├── editar-video.aspx        # Edição de vídeos
-│   ├── admin.aspx               # Painel de administração
-│   ├── Web.config               # Configuração da aplicação (inclui connection string)
-│   └── (outros ficheiros ASPX + assets)
+├── ProjetoFinalPAP/             # Main application code
+│   ├── index.aspx               # Home page
+│   ├── login.aspx               # Authentication page
+│   ├── register.aspx            # User registration
+│   ├── profile.aspx              # User profile
+│   ├── channel.aspx               # User's personal channel
+│   ├── favorites.aspx           # List of favorite videos
+│   ├── history.aspx           # Viewing history
+│   ├── edit-video.aspx        # Video editing
+│   ├── admin.aspx               # Administration panel
+│   ├── Web.config               # Application configuration (includes connection string)
+│   └── (other ASPX files + assets)
 │
-├── bin/                         # Ficheiros compilados
-├── obj/                         # Objetos temporários da build
-└── README.md                    # Documentação do projeto
-   ```
+├── bin/                         # Compiled files
+├── obj/                         # Temporary build objects
+└── README.md                    # Project documentation
+```
 
 ---
 
 ## 🔧 Troubleshooting
-- Erro na conexão à BD: verificar Web.config e se o SQL Server está ativo
-- Problemas de autenticação: confirmar que o script Skillxec.sql foi corrido corretamente
-- Problemas de login e registo via Google: no login.aspx.cs e no register.aspx.cs, terá que mudar para o seu Google Client ID e Password para que funcione
+- Database connection error: check Web.config and whether SQL Server is active
+- Authentication issues: confirm that the Skillxec.sql script has been run correctly
+- Login and registration issues via Google: in login.aspx.cs and register.aspx.cs, you will need to change to your Google Client ID and Password for it to work
 
 ---
 
-## 🙏 Agradecimentos
-- Professores e colegas que apoiaram o desenvolvimento da PAP
-- Comunidade ASP.NET e documentação da Microsoft
+## 🙏 Acknowledgments
+- Teachers and colleagues who supported the development of PAP
+- ASP.NET community and Microsoft documentation
 
----
 
-## 📜 Licença
-Este projeto foi desenvolvido para fins académicos da ATEC no âmbito da Prova de Aptidão Profissional (PAP).
+
+
+Translated with DeepL.com (free version)
